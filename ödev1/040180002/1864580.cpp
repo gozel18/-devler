@@ -134,7 +134,7 @@ int main(){
             return 1;
         
         }
-        
+        /*
         if (sn >= 1000000000 || sn < 100000000){
         
             cout << "this is not a valid student number" << endl << endl;
@@ -142,7 +142,7 @@ int main(){
             continue;
         
         }
-        
+        */
         push(&head, sn);
     
     }
