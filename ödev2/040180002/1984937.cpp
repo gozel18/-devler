@@ -21,7 +21,7 @@ typedef struct city {
 
 city *new_city_helper(string city_name) {
 
-    city * new_city = (city *) malloc(sizeof(city));
+    city * new_city = (city *) new city();
 
     new_city->city_name = city_name;
     new_city->is_visited = 0;
@@ -33,7 +33,7 @@ city *new_city_helper(string city_name) {
 
 adjacent_cities * new_adjacent_helper (int distance, int index) {
 
-    adjacent_cities * new_adjacent = (adjacent_cities *) malloc(sizeof(adjacent_cities));
+    adjacent_cities * new_adjacent = new adjacent_cities();
 
     new_adjacent->distance = distance;
     new_adjacent->adj_index = index;
@@ -116,7 +116,7 @@ int main() {
 
     bool found = false;
     int distance_from_the_previous_city = 0;
-    int from, to, sum = 0;
+    int from = -1, to= -1, sum = 0;
     
     while(from < 0 || from > 6 || to < 0 || to > 6) {
         for(int i = 0; i < 7; i++){
